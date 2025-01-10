@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" type="text/javascript" defer></script>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="icon" href="./public/images/favicon.ico" type="image/x-icon">
+    <title>Phone Book</title>
+</head>
+<body>
+    <main class="container">
+        <aside class="side-bar">
+            <h1 class="f-c">
+                My Phone Book
+                <img src="./public/images/side-bar-title-icon.svg" class="title-icon">
+            </h1>
+            <form action="#">
+                <input type="text" id="name" placeholder="Enter Full Name" class="input">
+                <input type="text" id="phone" placeholder="Enter Phone Number" class="input">
+                <textarea id="address" placeholder="Enter Address"></textarea>
+                <button type="submit" class="add-btn" id="add">
+                    Add User
+                    <i class="fa fa-user-plus"></i>
+                </button>
+            </form>
+            <button type="submit" class="update-btn" id="update">
+                Update Data
+                <i class="fa fa-refresh"></i>
+            </button>
+        </aside>
+        <section class="content-container">
+            <header class="f-c">
+                <input type="text" class="search-box" placeholder="Search by User Name (Type here)">
+                <i class="fa fa-search" id="search-icon"></i>
+            </header>
+            <section class="table-container">
+                <table>
+                    <thead>
+                        <th>Name</th>
+                        <th>Phone</th>
+                        <th>Address</th>
+                        <th>Action</th>
+                    </thead>
+                    <tbody id="list"></tbody>
+                </table>
+            </section>
+        </section>
+    </main>
+</body>
+</html>
